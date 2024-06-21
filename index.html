@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Python Loader</title>
+    <meta charset="utf-8">
+
+</head>
+<body>
+	<iframe id="codi" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+    <script>
+        var path = window.location.hash;
+        
+        var codi = document.getElementById('codi');
+        codi.setAttribute('src', "https://trinket.io/embed/python3/" + path.substring(1) + "?runOption=run");
+        
+    </script>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+        }
+        #codi {
+	        position: fixed;
+	        top: 0;
+	        left: 0;
+	        right: 0;
+	        bottom: 0;
+        }
+    </style>
+</body>
+
+</html>
